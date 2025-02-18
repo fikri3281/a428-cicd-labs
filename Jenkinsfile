@@ -42,7 +42,9 @@ pipeline {
             steps {
                 sh './jenkins/scripts/deliver.sh'
                 sh 'sleep 60'
-                  }
+                // After deploying, show React App's public address (replace with actual URL)
+                echo 'React App is now deployed at: http://your-react-app-public-url.com'
+            }
         }
     }
 }
